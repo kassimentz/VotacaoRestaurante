@@ -5,23 +5,14 @@ package model;
  */
 public class Profissional {
 
-    private Integer id;
     private String nome;
 
     public Profissional(){}
 
-    public Profissional(Integer id, String nome) {
-        this.id = id;
+    public Profissional(String nome) {
         this.nome = nome;
     }
 
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
 
     public String getNome() {
         return nome;
@@ -34,7 +25,6 @@ public class Profissional {
     @Override
     public String toString() {
         return "Profissional{" +
-                "id=" + id +
                 ", nome='" + nome + '\'' +
                 '}';
     }
